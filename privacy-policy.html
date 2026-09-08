@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — SaarJyotish / सारज्योतिष</title>
+<!--
+  Generated from docs/legal/PRIVACY_POLICY.md (kept as the single source
+  of truth). If that file changes, re-apply the same edit here -- do not
+  hand-drift the two apart. See docs/legal/web/README.md for deployment
+  instructions and the full placeholder list.
+
+  This is the publicly-hosted Privacy Policy URL Google Play's Data
+  Safety section requires (docs/release/OWNER_INPUT_REQUIRED.txt item 4).
+  The page itself is finished; only its HOSTING LOCATION (which domain
+  it lives at) and the bracketed [PLACEHOLDER] values below are still
+  open -- see the placeholder list in README.md.
+-->
+<link rel="stylesheet" href="_shared.css">
+</head>
+<body>
+<header class="page-header">
+  <h1>SaarJyotish / सारज्योतिष — गोपनीयता नीति (Privacy Policy)</h1>
+  <p>Last updated: 2026-09-05</p>
+</header>
+<main>
+  <div class="status-banner">
+    <strong>Status: DRAFT — LEGAL REVIEW REQUIRED</strong> before this
+    page is linked from the Play Store listing or relied upon. A
+    licensed Indian lawyer must review this document before publication
+    — see the "Legal review sign-off" note in
+    <code>docs/release/OWNER_INPUT_REQUIRED.txt</code> item 10.
+  </div>
+
+  <h2>1. Who We Are</h2>
+  <p>Operated by <span class="placeholder">[ ENTER LEGAL ENTITY NAME HERE ]</span>,
+  <span class="placeholder">[ ENTER REGISTERED ADDRESS HERE ]</span>
+  ("we," "us"), the data fiduciary.</p>
+
+  <h2>2. Contact</h2>
+  <p><span class="placeholder">[ ENTER GRIEVANCE / PRIVACY CONTACT HERE ]</span>
+  — interim value until supplied: the App's existing Admin-configurable
+  contact email (shown in-app as the WhatsApp/consultation contact
+  channel).</p>
+
+  <h2>3. What We Collect</h2>
+  <h3>3.1 Account identity</h3>
+  <p>If you create an account: your mobile number and/or email address,
+  its verification status, account creation timestamp, and (only if you
+  separately, explicitly opt in via its own un-pre-ticked checkbox)
+  marketing-consent status/version/timestamp. We never send a real OTP
+  code to your device from our servers in production without your
+  request for it — the OTP itself is never logged in a human-readable
+  way beyond a short-lived hashed comparison, and expires
+  automatically.</p>
+
+  <h3>3.2 Birth-chart / Kundali data</h3>
+  <p>Stored only on your own device. When you request a result, it is
+  sent to our server for that single calculation and is not saved there
+  (verified: the calculation endpoints do not write it to any database
+  table).</p>
+
+  <h3>3.3 Your questions and AI Guruji conversation content</h3>
+  <p>Sent to our server to generate/relate to an answer. The server
+  tracks only a message count against your paid unlock — not the
+  message text itself, and not your identity, unless a future
+  live-AI-provider integration changes this (Section 7.3 will be
+  updated first, before that feature goes live).</p>
+
+  <h3>3.4 Transaction/payment and wallet information</h3>
+  <p>Fee type, amount, status, the question it relates to, and (if you
+  were logged in at purchase time) a link to your account so the
+  purchase is recoverable if you sign in on a new device. Wallet
+  activity is a full, auditable transaction ledger (credits/debits/
+  refunds), never a bare mutable balance.</p>
+
+  <h3>3.5 Device/session/security information</h3>
+  <p>For admin/Jyotishi-tier users: a login-session token and 2FA state.
+  For end-user accounts: a revocable session token. For crash reporting:
+  an error message, stack trace, platform, app version, and an opaque
+  per-install session id — never linked to any device identifier or
+  personal data.</p>
+
+  <h3>3.6 Consent records</h3>
+  <p>Marketing consent (Section 3.1) and Terms/Privacy acceptance are
+  each their own explicit, timestamped, versioned record — never implied
+  by account creation.</p>
+
+  <h2>4. Purposes of Processing</h2>
+  <p>Account identity: to authenticate you and let you recover
+  purchases/wallet balance across devices. Birth-chart data: solely to
+  compute the result you requested, in that single request. Payment/
+  wallet data: to grant, verify, and let you review your entitlements.
+  Crash reports: to fix bugs.</p>
+
+  <h2>5. Legal Basis / Consent</h2>
+  <p>Account creation and OTP verification are based on your consent (by
+  using the login feature) and legitimate necessity to provide the
+  service you requested. Marketing communications are based solely on
+  your separate, explicit, revocable consent (Section 6).</p>
+
+  <h2>6. Consent Withdrawal</h2>
+  <p>You may withdraw marketing consent at any time from within the app
+  (the same toggle used to grant it); this takes effect immediately and
+  is recorded with its own timestamp/version.</p>
+
+  <h2>7. Service Providers / Processors</h2>
+  <p><strong>7.1 Hosting infrastructure:</strong> our backend is hosted
+  on Railway (<code>astrologyapp-server-production.up.railway.app</code>).
+  <span class="placeholder">[ ENTER FINAL PRODUCTION HOSTING PROVIDER / DOMAIN HERE, IF DIFFERENT FROM RAILWAY ]</span></p>
+  <p><strong>7.2 OTP/SMS/email delivery:</strong> not yet integrated — no
+  real vendor receives your mobile number/email for OTP delivery today
+  (per an owner decision, SMS/OTP vendor selection is not required for
+  the current product scope); this section will name the actual vendor
+  and their data-handling terms if that changes.</p>
+  <p><strong>7.3 Payment processor:</strong> not yet integrated —
+  payments are processed via a non-production test/mock flow only.</p>
+  <p><strong>7.4 AI provider:</strong> not yet integrated — the AI
+  Guruji chat feature is not powered by any live external AI provider;
+  this section will name the provider and disclose their training/
+  retention terms before that feature goes live, not after.</p>
+
+  <h2>8. Security</h2>
+  <p>Server-side OTP hashing (never stored/logged in plain text),
+  rate-limiting on authentication/OTP endpoints, revocable session
+  tokens with expiry, two-factor authentication for admin/Jyotishi
+  accounts, CORS restrictions, and fail-closed production startup
+  checks. We do not claim any specific encryption-at-rest mechanism
+  unless independently verified as actually implemented.</p>
+
+  <h2>9. Retention and Deletion</h2>
+  <ul>
+    <li>Birth-chart/Kundali data: on your device only, until you delete it.</li>
+    <li>Account identity (mobile/email/verification/consent): retained
+    while your account is active; irreversibly cleared upon account
+    deletion (Section 12) — not merely hidden.</li>
+    <li>Transaction/wallet records: retained for accounting/dispute-
+    resolution/legal-compliance purposes for the period required by
+    applicable law, but no longer linked to your identity once your
+    account is deleted.</li>
+    <li>Crash reports: a reasonable debugging window; never linked to
+    your identity.</li>
+  </ul>
+
+  <h2>10. Your Rights</h2>
+  <p>Once you have an account, you can, from within the app: view your
+  account/wallet/purchase data (Section 3), withdraw marketing consent
+  (Section 6), and delete your account (Section 12), which is the
+  functional equivalent of an erasure request for everything we hold
+  that identifies you. You can also delete your account from this
+  website without opening the app — see
+  <a href="account-deletion.html">Account Deletion</a>. For any other
+  access/correction request, contact us (Section 2).</p>
+
+  <h2>11. Account Deletion</h2>
+  <p>A genuine deletion mechanism exists both in-app and on the web
+  (<a href="account-deletion.html">account-deletion.html</a>, same page
+  Google Play's Data Safety section links to): your mobile number/email
+  are permanently removed and every verification/consent flag cleared;
+  transaction records necessary for legal/accounting retention remain
+  but no longer identify you.</p>
+
+  <h2>12. Grievance Process</h2>
+  <p>Contact us via Section 2; we acknowledge and respond within a
+  reasonable time consistent with applicable law.</p>
+
+  <h2>13. International/Cross-Border Processing</h2>
+  <p><span class="placeholder">[ ENTER SERVER LOCATION(S) / CROSS-BORDER DATA-TRANSFER DETAIL HERE ]</span>
+  — pending final hosting/vendor choices.</p>
+
+  <h2>14. Cookies/Web Technologies</h2>
+  <p>This page and <a href="account-deletion.html">account-deletion.html</a>
+  use no cookies, no analytics, and no third-party scripts — they only
+  call our own API when you actively submit a form. The mobile App's own
+  data practices are covered above; this note only concerns these
+  specific web pages.</p>
+
+  <h2>15. Children/Minors</h2>
+  <p>The App does not knowingly target children. Users must be 18 years
+  of age or older, enforced via a self-declaration checkbox at the point
+  of payment (recorded server-side with a timestamp) — not an
+  independently verified age-check.</p>
+
+  <h2>16. Changes to This Policy</h2>
+  <p>The "Last updated" date reflects the latest revision; material
+  changes are highlighted in-app, and where they affect an already-
+  accepted Terms/Privacy version, renewed acceptance is requested (see
+  the Terms &amp; Conditions document, Section 36).</p>
+</main>
+<footer>
+  SaarJyotish / सारज्योतिष —
+  <a href="privacy-policy.html">Privacy Policy</a> ·
+  <a href="terms-and-conditions.html">Terms &amp; Conditions</a> ·
+  <a href="account-deletion.html">Account Deletion</a>
+</footer>
+</body>
+</html>
