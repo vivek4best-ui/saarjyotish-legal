@@ -21,7 +21,7 @@
 <body>
 <header class="page-header">
   <h1>SaarJyotish / सारज्योतिष — गोपनीयता नीति (Privacy Policy)</h1>
-  <p>Last updated: 2026-09-05</p>
+  <p>Last updated: 2026-10-21</p>
 </header>
 <main>
   <div class="status-banner">
@@ -39,10 +39,11 @@
   ("we," "us"), the data fiduciary.</p>
 
   <h2>2. Contact</h2>
-  <p><span class="placeholder">[ ENTER GRIEVANCE / PRIVACY CONTACT HERE ]</span>
-  — interim value until supplied: the App's existing Admin-configurable
-  contact email (shown in-app as the WhatsApp/consultation contact
-  channel).</p>
+  <p><strong>saarjyotish.customercare@gmail.com</strong>. This email is
+  the sole designated grievance/customer-support/privacy-request
+  channel — no phone number or WhatsApp contact is published or used
+  for this purpose. A dedicated named grievance officer has not yet
+  been designated; until one is, this email is the contact point.</p>
 
   <h2>3. What We Collect</h2>
   <h3>3.1 Account identity</h3>
@@ -55,18 +56,42 @@
   way beyond a short-lived hashed comparison, and expires
   automatically.</p>
 
+  <p>If you instead sign in with Google Sign-In (an alternative,
+  free-to-you login path), we receive only your Google account's email
+  address and Google's own confirmation that it is verified; we do not
+  receive your Google password or any other Google account data, and
+  manually typing an email elsewhere in the App is never treated as
+  equivalent to this Google-confirmed verification. See Section 7.5 for
+  this path's current activation status.</p>
+
   <h3>3.2 Birth-chart / Kundali data</h3>
-  <p>Stored only on your own device. When you request a result, it is
-  sent to our server for that single calculation and is not saved there
-  (verified: the calculation endpoints do not write it to any database
-  table).</p>
+  <p>Stored on your own device. When you request a result, it is sent to
+  our server for that calculation, and the calculation itself does not
+  save it. It is kept on our server only in these cases:</p>
+  <ul>
+    <li>Saved-kundali backup: if you log in with an email/Google account,
+    your saved kundali list is backed up to your account so you can
+    restore it on another device. Deleting the account deletes it.</li>
+    <li>Purchase history: a paid question or report keeps the question
+    title and the chart(s) it was bought for (name, birth date, time and
+    place), so you can reopen the answer within its valid period, also on
+    another device. Deleting the account clears these details; the
+    payment row itself (fee, amount, date) stays for accounting
+    (Section 9).</li>
+    <li>BTR research data: see the Terms section "BTR research data".</li>
+  </ul>
 
   <h3>3.3 Your questions and AI Guruji conversation content</h3>
-  <p>Sent to our server to generate/relate to an answer. The server
-  tracks only a message count against your paid unlock — not the
-  message text itself, and not your identity, unless a future
-  live-AI-provider integration changes this (Section 7.3 will be
-  updated first, before that feature goes live).</p>
+  <p>When you use the paid A.I. गुरुजी chat, your messages and the text of
+  the answer you are asking about are sent to our AI provider (Section
+  7.4) to write the reply; the reply passes our own filters before you
+  see it. The answer text is sent as it appears in the App, so it can
+  include a name or chart details shown in that answer; no other account
+  data (email, mobile, wallet) is sent. Your messages and the replies are
+  saved on our server with that paid unlock, so the conversation can
+  continue and the message limit can be enforced. If you are logged in,
+  deleting your account deletes these chats; otherwise you can ask us
+  (Section 2) to delete them.</p>
 
   <h3>3.4 Transaction/payment and wallet information</h3>
   <p>Fee type, amount, status, the question it relates to, and (if you
@@ -87,10 +112,20 @@
   each their own explicit, timestamped, versioned record — never implied
   by account creation.</p>
 
+  <h3>3.7 Place search, location, voice and uploads</h3>
+  <p>Place search sends the text you type to Google (Section 7.6) through
+  our server, only to suggest place names. "Current location" is read on
+  your device only when you tap it. Voice typing uses your phone's own
+  speech-recognition service (on Android usually Google's), and spoken
+  replies use your phone's own text-to-speech. Biodata PDFs/photos you
+  upload are read on our server to fill the form and are not saved.</p>
+
   <h2>4. Purposes of Processing</h2>
   <p>Account identity: to authenticate you and let you recover
-  purchases/wallet balance across devices. Birth-chart data: solely to
-  compute the result you requested, in that single request. Payment/
+  purchases/wallet balance across devices. Birth-chart data: to compute
+  the result you requested and, where Section 3.2 says so, to back up
+  your saved kundalis and reopen what you bought. A.I. गुरुजी chat: to
+  answer your follow-up questions about that answer. Payment/
   wallet data: to grant, verify, and let you review your entitlements.
   Crash reports: to fix bugs.</p>
 
@@ -99,6 +134,22 @@
   using the login feature) and legitimate necessity to provide the
   service you requested. Marketing communications are based solely on
   your separate, explicit, revocable consent (Section 6).</p>
+
+  <h3>5.1 Digital Personal Data Protection Act, 2023 — Current Status</h3>
+  <p>The Digital Personal Data Protection Act, 2023 has been enacted,
+  and the Digital Personal Data Protection Rules, 2025 were notified in
+  the Gazette on 14 November 2025. Under the notified commencement
+  schedule, most substantive compliance obligations under the Act and
+  Rules come into force in phases, with full applicability from
+  <strong>14 May 2027</strong>. We do not claim that the App is "fully
+  DPDP-compliant" as if every provision were already legally in force —
+  that would overstate the current legal position. What we do represent
+  is that we have already built, and describe in this Policy,
+  data-protection-aligned practices consistent with the Act's
+  principles (purpose limitation, a genuine consent record, an
+  erasure/account-deletion mechanism, and a grievance contact) ahead of
+  the Act's full commencement, and we will update this Policy as
+  further provisions come into force or as our own practices change.</p>
 
   <h2>6. Consent Withdrawal</h2>
   <p>You may withdraw marketing consent at any time from within the app
@@ -118,12 +169,27 @@
   (per an owner decision, SMS/OTP vendor selection is not required for
   the current product scope); this section will name the actual vendor
   and their data-handling terms if that changes.</p>
-  <p><strong>7.3 Payment processor:</strong> not yet integrated —
-  payments are processed via a non-production test/mock flow only.</p>
-  <p><strong>7.4 AI provider:</strong> not yet integrated — the AI
-  Guruji chat feature is not powered by any live external AI provider;
-  this section will name the provider and disclose their training/
-  retention terms before that feature goes live, not after.</p>
+  <p><strong>7.3 Payment processor:</strong> payments actually processed
+  today go through a non-production test/mock flow only. A real
+  payment-gateway adapter (Razorpay) exists in our backend
+  (order-creation, signature-verified webhooks) but is not yet
+  activated with live credentials and the App is not yet wired to use
+  it. This section will name Razorpay (or whichever processor actually
+  goes live) and disclose their data-handling terms before real
+  payments begin, not after.</p>
+  <p><strong>7.4 AI provider:</strong> the A.I. गुरुजी chat uses
+  Anthropic, PBC (USA) through its commercial API. It receives only what
+  Section 3.3 describes, to write the reply. Under Anthropic's published
+  commercial terms, data sent through its API is not used to train its
+  models.</p>
+  <p><strong>7.5 Google Sign-In:</strong> built into the App as an
+  alternative, no-paid-vendor login path (Google's own free Sign-In
+  service — Google LLC acts as your identity provider, not as our data
+  processor for anything beyond that one-time sign-in confirmation).
+  Active in production.</p>
+  <p><strong>7.6 Google Places:</strong> place search for birth/event
+  places sends the text you type to Google's Places API through our
+  server, only to return matching place names.</p>
 
   <h2>8. Security</h2>
   <p>Server-side OTP hashing (never stored/logged in plain text),
@@ -135,7 +201,11 @@
 
   <h2>9. Retention and Deletion</h2>
   <ul>
-    <li>Birth-chart/Kundali data: on your device only, until you delete it.</li>
+    <li>Birth-chart/Kundali data: on your device until you delete it; the
+    saved-kundali backup and purchase-history details (Section 3.2) until
+    you delete your account.</li>
+    <li>A.I. गुरुजी chats: kept with the paid unlock; deleted with your
+    account, or on request (Section 2).</li>
     <li>Account identity (mobile/email/verification/consent): retained
     while your account is active; irreversibly cleared upon account
     deletion (Section 12) — not merely hidden.</li>
@@ -162,8 +232,10 @@
   (<a href="account-deletion.html">account-deletion.html</a>, same page
   Google Play's Data Safety section links to): your mobile number/email
   are permanently removed and every verification/consent flag cleared;
-  transaction records necessary for legal/accounting retention remain
-  but no longer identify you.</p>
+  your saved-kundali backup and A.I. गुरुजी chats are deleted, and the
+  name/birth details kept with your purchases are cleared; transaction
+  records necessary for legal/accounting retention remain but no longer
+  identify you.</p>
 
   <h2>12. Grievance Process</h2>
   <p>Contact us via Section 2; we acknowledge and respond within a
